@@ -4,6 +4,9 @@ module.exports = {
         'marginLeft' : '10px',
         'marginRight' : '10px'
     },
+    header: {
+        'color' : '#6b181e'
+    },
     table: {
         'color' : 'black'
     },

@@ -12,7 +12,8 @@ export class MainContainerComponent extends Component {
 			books : testBooks,
 			bookTitle : '',
 			bookYear : '',
-			bookGenre : ''
+			bookGenre : '',
+			read : false
 		};
 
 		this.updateNew = this.updateNew.bind(this);
@@ -24,20 +25,22 @@ export class MainContainerComponent extends Component {
 		var newBook = {
 			title : this.state.bookTitle,
 			year : this.state.bookYear,
-			genre : this.state.bookGenre
+			genre : this.state.bookGenre,
+			read : this.state.read
 		}
 		this.state.books.push(newBook);
 		console.log(this.state.books);
 		this.setState({
 			bookTitle : '',
 			bookYear : '',
-			bookGenre : ''
+			bookGenre : '',
+			read : false
 		})
 	}
 
 	updateNew(e){
 		let name = e.target.name;
-		let value = e.target.value;
+		let value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
 		this.setState({
 			[name] : value
 		}); 

@@ -8,5 +8,8 @@ module.exports = {
     },
     container: {
         'backgroundColor' : '#424342'
+    },
+    checkbox: {
+        'verticalAlign' : 'center'
     }
 }
