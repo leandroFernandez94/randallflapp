@@ -33,8 +33,8 @@ export class AddBookComponent extends Component {
 						</div>
 						<div className="form-group">
 							<div className="col-md-1 checkbox-inline" style={addBooksStyle.checkbox}>
-								<label htmlFor="read" style={addBooksStyle.checkboxLabel}>
-									<input type="checkbox" id="read" name="read" value={this.props.read} onChange={this.props.onUpdateNew} required></input> Read it?
+								<label style={addBooksStyle.checkboxLabel}>
+									<input type="checkbox" name="read" value={this.props.read} onChange={this.props.onUpdateNew} required style={addBooksStyle.checkboxHeight}></input> Read it?
 								</label>
 							</div>
 						</div>

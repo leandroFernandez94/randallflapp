@@ -14,8 +14,8 @@ export class BookListComponent extends Component {
                     <td>{item.year}</td>
                     <td>{item.genre}</td>
                     <td>{item.read 
-                        ?<span className='glyphicon glyphicon-remove'></span>
-                        :<span className='glyphicon glyphicon-ok'></span> 
+                        ?<span className='glyphicon glyphicon-ok'></span>
+                        :<span className='glyphicon glyphicon-remove'></span> 
                     }</td>
                 </tr>
             )  
@@ -27,7 +27,7 @@ export class BookListComponent extends Component {
         return(
             <div style={BookListStyle.container}>
                 <div className="row" style={BookListStyle.row}>
-					<h3 style={BookListStyle.header}>Book added:</h3>
+					<h3 style={BookListStyle.header}>Books added:</h3>
 				</div>
                 <div className="row" style={BookListStyle.row}>    
                     <table className="table table-hover" style={BookListStyle.table}>

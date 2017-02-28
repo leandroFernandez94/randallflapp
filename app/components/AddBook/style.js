@@ -10,10 +10,13 @@ module.exports = {
         'backgroundColor' : '#424342'
     },
     checkbox: {
-        'margin' : '5px 0 0 0'
+        'margin' : '3px 0 0 0'
     },
     checkboxLabel: {
         'fontSize' : '20px',
         'color' : 'black'
+    },
+    checkboxHeight: {
+        'height' : '20px'
     }
 }

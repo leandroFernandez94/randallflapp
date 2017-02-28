@@ -12,6 +12,7 @@ module.exports = {
     },
     container: {
         'backgroundColor' : '#4C5B61',
-        'height' : '400px'
+        'height' : 'auto',
+        'marginBottom' : '10px'
     }
 }
