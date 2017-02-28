@@ -10,23 +10,31 @@ export class AddBookComponent extends Component {
 
 	render() {
 		return (
-			<div className="container" style={addBooksStyle.container}>
+			<div style={addBooksStyle.container}>
 				<div className="row" style={addBooksStyle.row}>
-					<h1>Add a Book</h1>
+					<h1 style={addBooksStyle.header}>Add a Book</h1>
 				</div>
 				<div className="row" style={addBooksStyle.row}>
-					<div className="col-md-2">
-						<input type="text" name="book title" className="form-control" placeholder="add title..."></input>
-					</div>
-					<div className="col-md-2">
-						<input type="text" name="book year" className="form-control" placeholder="add release year..."></input>
-					</div>	
-					<div className="col-md-2">
-						<input type="text" name="book genre" className="form-control" placeholder="add book genre..."></input>
-					</div>
-					<div className="col-md-2">
-						<button type="submit" className="btn btn-success">add</button>
-					</div>
+					<form onSubmit={this.props.onAdd}>
+						<div className="form-group">
+							<div className="col-md-2">
+								<input type="text" name="bookTitle" value={this.props.bookTitle} onChange={this.props.onUpdateNew} className="form-control" placeholder="add title..." required></input>
+							</div>
+						</div>
+						<div className="form-group">
+							<div className="col-md-2">
+								<input type="text" name="bookYear" value={this.props.bookYear} onChange={this.props.onUpdateNew} className="form-control" placeholder="add year..." required></input>
+							</div>
+						</div>
+						<div className="form-group">
+							<div className="col-md-2">
+								<input type="text" name="bookGenre" value={this.props.bookGenre} onChange={this.props.onUpdateNew} className="form-control" placeholder="add genre..." required></input>
+							</div>
+						</div>
+						<div className="form-group col-md-2">
+							<button type="submit" className="btn btn-success" >add</button>
+						</div>
+					</form>	
 				</div>
 			</div>
 		);

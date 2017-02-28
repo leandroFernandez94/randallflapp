@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-var BooksListContainerComponent = require('./containers/BooksListContainerComponent').BooksListContainerComponent;
+var MainContainerComponent = require('./containers/MainContainerComponent').MainContainerComponent;
 
 export class Index extends Component {
 	
 	render() {
 		return (
 			<div>
-				<BooksListContainerComponent />
+				<MainContainerComponent />
 			</div>
 		);
 	}

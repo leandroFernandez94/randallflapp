@@ -3,8 +3,10 @@ module.exports = {
         'marginTop' : '10px',
         'marginLeft' : '10px'
     },
+    header: {
+        'color' : '#6b181e'
+    },
     container: {
-        'backgroundColor' : 'black',
-        'paddingBottom' : '20px'
+        'backgroundColor' : '#424342'
     }
 }
